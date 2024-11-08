@@ -39,8 +39,8 @@ Before you start working, always pull the latest changes from the repository. Th
 - In VS Code, go to the **Source Control** panel (the icon with three branches, or press `Ctrl + Shift + G`).
 - Click on the three dots (...) at the top, then select **Pull**.
 - Alternatively, open the terminal and type:
-  ```bash
-  git pull
+     ```bash
+     git pull
 
 
 ### 2. Creating a New Branch (Optional but Recommended)
@@ -90,9 +90,8 @@ After committing, you need to push your changes to the remote repository on GitH
 
 - In the **Source Control** panel, click the three dots (...) and select **Push**.
 - Alternatively, use the terminal:
-
-  ```bash
-  git push
+     ```bash
+     git push
 
 ---
 
