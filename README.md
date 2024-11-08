@@ -72,8 +72,9 @@ Once you’ve completed a task or made significant changes, it’s time to commi
 Alternatively, you can use the terminal:
    ```bash
    git add .
-   git commit -m "Add task creation functionality" ```
+   git commit -m "Add task creation functionality" 
 
+---
 
 ### Commit Message Best Practices
 
@@ -91,7 +92,9 @@ After committing, you need to push your changes to the remote repository on GitH
 - Alternatively, use the terminal:
 
   ```bash
-  git push ```
+  git push
+
+---
 
 ### Best Practices for Using Git
 
