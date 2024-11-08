@@ -43,6 +43,7 @@ Before you start working, always pull the latest changes from the repository. Th
   ```bash
   git pull
 
+
 ### 2. Creating a New Branch (Optional but Recommended)
 
 To keep the main branch stable, it’s a good practice to work on separate branches for new features or bug fixes.
@@ -75,6 +76,7 @@ Alternatively, you can use the terminal:
    git add .
    git commit -m "Add task creation functionality"
 
+
 ### Commit Message Best Practices
 
 - Write clear, concise commit messages.
@@ -92,6 +94,7 @@ After committing, you need to push your changes to the remote repository on GitH
 
   ```bash
   git push
+
 
 # Best Practices for Using Git
 
