@@ -70,11 +70,10 @@ Once you’ve completed a task or made significant changes, it’s time to commi
 3. Click the checkmark (✓) icon at the top of the Source Control panel to commit the changes.
 
 Alternatively, you can use the terminal:
-   ```bash
+```bash
    git add .
-   git commit -m "Add task creation functionality" 
-
----
+   git commit -m "Add task creation functionality"
+```
 
 ### Commit Message Best Practices
 
