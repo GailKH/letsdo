@@ -89,43 +89,26 @@ After committing, you need to push your changes to the remote repository on GitH
 
 - In the **Source Control** panel, click the three dots (...) and select **Push**.
 - Alternatively, use the terminal:
+
   ```bash
   git push
 
+### Best Practices for Using Git
 
-# Best Practices for Using Git
+1. **Commit Small, Logical Changes**  
+   Make commits for each small, complete task instead of large, unrelated changes. This makes it easier to track changes and troubleshoot if necessary.
 
-1. **Commit Small, Logical Changes**
-   - Make commits for each small, complete task instead of large, unrelated changes. This makes it easier to track changes and troubleshoot if necessary.
+2. **Pull Before You Push**  
+   Always pull the latest changes from the main branch before you start working and before you push your changes. This avoids conflicts and ensures your changes are based on the most recent version of the code.
 
-2. **Pull Before You Push**
-   - Always pull the latest changes from the main branch before you start working and before you push your changes. This avoids conflicts and ensures your changes are based on the most recent version of the code.
+3. **Handle Merge Conflicts**  
+   If you encounter a conflict when pulling or merging:
+   - VS Code will highlight the conflicts in your files. Decide which changes to keep.
+   - After resolving conflicts, save the file, stage the changes in the **Source Control** panel, and then commit again.
+   - Push your changes after resolving the conflict.
 
-3. **Handle Merge Conflicts**
-   - If you encounter a conflict when pulling or merging:
-     - VS Code will highlight the conflicts in your files. Decide which changes to keep.
-     - After resolving conflicts, save the file, stage the changes in the Source Control panel, and then commit again.
-     - Push your changes after resolving the conflict.
+4. **Regularly Push Your Work**  
+   Push your changes often (at least once a day or after completing a task). This ensures your work is saved on GitHub and is accessible to the team.
 
-4. **Regularly Push Your Work**
-   - Push your changes often (at least once a day or after completing a task). This ensures your work is saved on GitHub and is accessible to the team.
-
-5. **Use Branches for New Features or Fixes**
-   - Always create a new branch when working on a new feature or bug fix. Once the feature is completed and tested, merge the branch into the main branch with a pull request on GitHub.
-
----
-
-## Summary of Git Commands in VS Code
-
-| Action            | Command in VS Code                    | Terminal Command                       |
-|-------------------|---------------------------------------|----------------------------------------|
-| Clone a repo      | Git: Clone                            | `git clone <repo-url>`                 |
-| Pull changes      | Pull                                  | `git pull`                             |
-| Create a branch   | Branch > Create New Branch            | `git checkout -b <branch-name>`        |
-| Stage changes     | Source Control > (+) next to file     | `git add <file-name>` or `git add .`   |
-| Commit changes    | Type message + ✓ button               | `git commit -m "message"`              |
-| Push changes      | Push                                  | `git push`                             |
-
----
-
-By following this guide and the best practices, the Let'sDo team can work smoothly with Git, collaborating on the project and keeping code organized and conflict-free.
+5. **Use Branches for New Features or Fixes**  
+   Always create a new branch when working on a new feature or bug fix. Once the feature is completed and tested, merge the branch into the main branch with a pull request on GitHub.
