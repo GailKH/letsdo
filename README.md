@@ -1,78 +1,131 @@
-# Let'sDo App – Project Plan
+# Guide to Using Git for the Let'sDo Team
 
-## Project Overview
-
-**Goal**: The objective of this project is to develop a functional and somewhat polished web application prototype using the MERN Stack (MongoDB, ExpressJS, React, and NodeJS). By the end of the semester, we aim to deliver a prototype that demonstrates core features and reflects the team’s learning outcomes in full-stack web application development.
-
-### Team Structure
-
-All team members are designated as Developers. Each team member is expected to participate in all aspects of the project lifecycle, including planning, design, coding, testing, and deployment. Additionally, all team members are responsible for communicating project decisions, technical choices, and process improvements.
+Here's a guide to using Git for the Let'sDo team, with steps and best practices to help everyone understand how to use Git effectively. This guide will focus on using Git within **VS Code**.
 
 ---
 
-## Milestones and Key Deliverables
+## Git Basics for the Let'sDo Team
 
-The project will be structured into several milestones, with each representing a key phase in development:
+### Initial Setup
 
-### Milestone 1: Project Planning and Setup
+#### Install Git
+- Make sure Git is installed on your computer. [Download it here](https://git-scm.com/downloads) if needed.
 
-- **Objective**: Establish a clear understanding of project goals, requirements, and the development environment.
+#### Configure Git
+1. Open **VS Code**.
+2. Open the terminal (`View > Terminal`).
+3. Set your username and email (only required once):
+   ```bash
+   git config --global user.name "Your Name"
+   git config --global user.email "your.email@example.com"
 
-- **Key Deliverables**:
-  - Define project requirements and scope.
-  - Set up the development environment for MERN Stack.
-  - Create a project timeline and assign initial tasks.
-  - Develop a wireframe or mockup for the application layout.
-- **Due Date**: [Specify Date]
+## Cloning the Repository
+
+The first step is to download the project repository to your local machine.
+
+1. Go to the repository page on GitHub and copy the repository URL.
+2. In **VS Code**, open the **Command Palette** (`Ctrl + Shift + P` on Windows/Linux or `Cmd + Shift + P` on Mac).
+3. Type **Git: Clone** and press Enter.
+4. Paste the repository URL and select the folder where you want to save the project.
+5. VS Code will prompt you to open the cloned repository in a new window. Choose **Open** to view the project files in VS Code.
+
+## Basic Git Workflow
+
+The general Git workflow involves pulling the latest changes, making updates, committing your changes, and then pushing those changes back to GitHub. Here’s how each step works in VS Code:
+
+### 1. Pulling Changes
+Before you start working, always pull the latest changes from the repository. This ensures your local copy is up-to-date with everyone else’s work.
+
+- In VS Code, go to the **Source Control** panel (the icon with three branches, or press `Ctrl + Shift + G`).
+- Click on the three dots (...) at the top, then select **Pull**.
+- Alternatively, open the terminal and type:
+  
+  ```bash
+  git pull
+
+### 2. Creating a New Branch (Optional but Recommended)
+
+To keep the main branch stable, it’s a good practice to work on separate branches for new features or bug fixes.
+
+- Click on the branch name at the bottom left of VS Code (usually says "main" or "master").
+- Select **Create New Branch** and give it a descriptive name, such as `feature-tasks` or `bugfix-login`.
+
+This will create a new branch where you can work without affecting the main branch.
+
+### 3. Making Changes
+
+Now you can start working on your assigned tasks. Make your changes to the code in VS Code.
+
+- Save your changes frequently using `Ctrl + S` (or `Cmd + S` on Mac).
+- VS Code will automatically detect changes in files and show them in the **Source Control** panel.
 
 ---
 
-### Milestone 2: Back-End Development
+### 4. Committing Changes
 
-- **Objective**: Develop the back-end structure and database to support core functionalities.
+Once you’ve completed a task or made significant changes, it’s time to commit your work.
 
-- **Key Deliverables**:
-  - Design database schema using MongoDB.
-  - Implement RESTful APIs with ExpressJS and NodeJS.
-  - Create user authentication (sign-up, login, and role-based access).
-  - Develop initial API documentation.
-- **Due Date**: [Specify Date]
+1. Go to the **Source Control** panel.
+2. Enter a commit message describing your changes (e.g., "Add task creation functionality").
+3. Click the checkmark (✓) icon at the top of the Source Control panel to commit the changes.
 
----
+Alternatively, you can use the terminal:
 
-### Milestone 3: Front-End Development
+   ```bash
+   git add .
+   git commit -m "Add task creation functionality"
 
-- **Objective**: Build the core front-end interface using React.
+### Commit Message Best Practices
 
-- **Key Deliverables**:
-  - Set up React components based on the application wireframe.
-  - Connect front-end to the back-end using APIs.
-  - Create user flows (e.g., registration, login, profile management).
-  - Ensure responsive design and basic UX/UI functionality.
-- **Due Date**: [Specify Date]
+- Write clear, concise commit messages.
+- Use the imperative mood (e.g., "Fix bug" instead of "Fixed bug").
+- Be descriptive but brief (e.g., "Implement user authentication flow").
 
 ---
 
-### Milestone 4: Integration and Testing
+### 5. Pushing Changes
 
-- **Objective**: Test integration of the front-end and back-end, and conduct quality assurance.
+After committing, you need to push your changes to the remote repository on GitHub.
 
-- **Key Deliverables**:
-  - Perform integration testing to ensure all components work seamlessly.
-  - Conduct unit and functional testing of both front-end and back-end components.
-  - Refine application design and address any bugs.
-  - Perform load testing and refine database performance.
-- **Due Date**: [Specify Date]
+- In the **Source Control** panel, click the three dots (...) and select **Push**.
+- Alternatively, use the terminal:
+
+  ```bash
+  git push
+
+# Best Practices for Using Git
+
+1. **Commit Small, Logical Changes**
+   - Make commits for each small, complete task instead of large, unrelated changes. This makes it easier to track changes and troubleshoot if necessary.
+
+2. **Pull Before You Push**
+   - Always pull the latest changes from the main branch before you start working and before you push your changes. This avoids conflicts and ensures your changes are based on the most recent version of the code.
+
+3. **Handle Merge Conflicts**
+   - If you encounter a conflict when pulling or merging:
+     - VS Code will highlight the conflicts in your files. Decide which changes to keep.
+     - After resolving conflicts, save the file, stage the changes in the Source Control panel, and then commit again.
+     - Push your changes after resolving the conflict.
+
+4. **Regularly Push Your Work**
+   - Push your changes often (at least once a day or after completing a task). This ensures your work is saved on GitHub and is accessible to the team.
+
+5. **Use Branches for New Features or Fixes**
+   - Always create a new branch when working on a new feature or bug fix. Once the feature is completed and tested, merge the branch into the main branch with a pull request on GitHub.
 
 ---
 
-### Milestone 5: Finalization and Deployment
+## Summary of Git Commands in VS Code
 
-- **Objective**: Prepare the application for deployment and showcase.
+| Action            | Command in VS Code                    | Terminal Command                       |
+|-------------------|---------------------------------------|----------------------------------------|
+| Clone a repo      | Git: Clone                            | `git clone <repo-url>`                 |
+| Pull changes      | Pull                                  | `git pull`                             |
+| Create a branch   | Branch > Create New Branch            | `git checkout -b <branch-name>`        |
+| Stage changes     | Source Control > (+) next to file     | `git add <file-name>` or `git add .`   |
+| Commit changes    | Type message + ✓ button               | `git commit -m "message"`              |
+| Push changes      | Push                                  | `git push`                             |
 
-- **Key Deliverables**:
-  - Deploy the application on a cloud platform.
-  - Ensure all documentation is complete, including code comments and API docs.
-  - Perform final testing for any remaining issues.
-  - Prepare a project presentation for review and showcase.
-- **Due Date**: [Specify Date]
+---
+
+By following this guide and the best practices, the Let'sDo team can work smoothly with Git, collaborating on the project and keeping code organized and conflict-free.
